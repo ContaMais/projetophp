@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Visitantes</title>
+    <link rel="stylesheet" href="style.css">
+<script src="glows.js"></script>
+</head>
+<body>
+    <h1>Cadastro de usuários do Site</h1>
+    <br>
+    <form action="verifica.php" method="POST">
+        <pre>
+Insira as informações para efetuar o cadastro e deixe seu comentário.
+
+Nome:    <input type="text" size="35" maxlength="256" name="nome">
+E-mail:  <input type="text" size="35" maxlength="256" name="email">
+Cidade:  <input type="text" size="35" maxlength="256" name="cidade">
+Estado:  <input type="text" size="2" maxlength="2" name="estado">
+
+Digite sua opinião sobre o site no espaço abaixo:
+<textarea rows="5" cols="42" name="comentarios"></textarea>
+
+<input type="submit" value="Efetuar Cadastro" name="enviar">
+        </pre>
+    </form>
+</body>
+</html>
