@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS bdexemplo;
-USE bdexemplo;
+CREATE DATABASE IF NOT EXISTS meu_projeto;
+USE meu_projeto;
 
 CREATE TABLE IF NOT EXISTS cadastro (
   nome VARCHAR(35) NOT NULL,

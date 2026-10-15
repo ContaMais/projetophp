@@ -4,25 +4,39 @@
     <meta charset="utf-8">
     <title>Cadastro de Visitantes</title>
     <link rel="stylesheet" href="style.css">
-<script src="glows.js"></script>
+    <script src="glows.js"></script>
 </head>
 <body>
     <h1>Cadastro de usuários do Site</h1>
-    <br>
-    <form action="verifica.php" method="POST">
-        <pre>
-Insira as informações para efetuar o cadastro e deixe seu comentário.
+    <p class="form-desc">Insira as informações para efetuar o cadastro e deixe seu comentário.</p>
 
-Nome:    <input type="text" size="35" maxlength="256" name="nome">
-E-mail:  <input type="text" size="35" maxlength="256" name="email">
-Cidade:  <input type="text" size="35" maxlength="256" name="cidade">
-Estado:  <input type="text" size="2" maxlength="2" name="estado">
+    <form action="verifica.php" method="POST" class="form-cadastro">
+        <div class="campo-linha">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="input-padrao" maxlength="256" required>
+        </div>
 
-Digite sua opinião sobre o site no espaço abaixo:
-<textarea rows="5" cols="42" name="comentarios"></textarea>
+        <div class="campo-linha">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" class="input-padrao" maxlength="256" required>
+        </div>
 
-<input type="submit" value="Efetuar Cadastro" name="enviar">
-        </pre>
+        <div class="campo-linha">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" class="input-padrao" maxlength="256" required>
+        </div>
+
+        <div class="campo-linha">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" class="input-estado" maxlength="2" oninput="this.value = this.value.toUpperCase()" required>
+        </div> s gain partida barb amigos in farm tectando verificando alguma situazinha mostrando fio se confrontally tava revisando becomes leads
+
+        <div class="bloco-comentarios">
+            <label for="comentarios">Digite sua opinião sobre o site no espaço abaixo:</label>
+            <textarea id="comentarios" name="comentarios" class="input-padrao textarea-bloqueado" rows="5" required></textarea>
+        </div>
+
+        <input type="submit" value="Efetuar Cadastro" name="enviar">
     </form>
 </body>
 </html>

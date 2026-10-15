@@ -1,5 +1,5 @@
 <?php
-$base = mysqli_connect('localhost', 'root', '', 'bdexemplo') or die("erro de conexão");
+$base = mysqli_connect('localhost', 'root', '', 'meu_projeto') or die("erro de conexão");
 mysqli_set_charset($base, 'utf8');
 
 $regra1 = "SELECT * FROM cadastro WHERE estado = 'SP' ORDER BY nome";

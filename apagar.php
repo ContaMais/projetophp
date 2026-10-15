@@ -11,7 +11,7 @@
 $var = isset($_GET['a']) ? $_GET['a'] : '';
 
 if (!empty($var)) {
-    $base = mysqli_connect('localhost', 'root', '', 'bdexemplo') or die("erro de conexão");
+    $base = mysqli_connect('localhost', 'root', '', 'meu_projeto') or die("erro de conexão");
     mysqli_set_charset($base, 'utf8');
 
     $apagar = "DELETE FROM cadastro WHERE nome='$var'";

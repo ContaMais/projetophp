@@ -375,3 +375,86 @@ hr {
     background: linear-gradient(90deg, #ec4899, #8b5cf6);
     border-radius: 4px;
 }
+/* --- Ajuste fino e compacto do Formulário de Cadastro --- */
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+}
+
+.form-desc {
+    margin-bottom: 16px;
+    color: #cbd5e1;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Linhas dos campos */
+.campo-linha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.campo-linha label {
+    width: 65px;
+    font-size: 14px;
+    color: #e2e8f0;
+    flex-shrink: 0;
+}
+
+.campo-linha input[type="text"] {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding: 8px 12px !important;
+}
+
+/* Caixa do Estado pequena e com Caps Lock */
+.input-estado {
+    width: 60px !important;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding: 8px 12px !important;
+}
+
+/* Bloco dos comentários mais próximo de cima e centralizado */
+.bloco-comentarios {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+/* Texto de instrução centralizado e junto da caixa */
+.bloco-comentarios label {
+    display: block;
+    text-align: center;
+    margin-bottom: 6px; /* Bem encostado na caixa de texto */
+    font-size: 13px;
+    color: #cbd5e1;
+    width: 100%;
+}
+
+/* Caixa de comentários com tamanho travado */
+.textarea-bloqueado {
+    width: 320px !important;
+    max-width: 320px !important;
+    min-width: 320px !important;
+    height: 90px !important;
+    padding: 8px 12px !important;
+    margin: 0 !important;
+    resize: none !important;
+    display: block;
+}
+
+/* Botão mais próximo da caixa de comentários */
+.form-cadastro input[type="submit"] {
+    align-self: center;
+    margin-top: 12px !important; /* Puxa o botão para perto */
+    padding: 10px 24px;
+}
